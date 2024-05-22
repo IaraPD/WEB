@@ -1,0 +1,50 @@
+
+/* Color Theme Swatches in Hex */
+.Coral-Teal-Gray-1-hex { color: #FF5F5D; }
+.Coral-Teal-Gray-2-hex { color: #3F7C85; }
+.Coral-Teal-Gray-3-hex { color: #00CCBF; }
+.Coral-Teal-Gray-4-hex { color: #72F2EB; }
+.Coral-Teal-Gray-5-hex { color: #747E7E; }
+
+/* Color Theme Swatches in RGBA */
+.Coral-Teal-Gray-1-rgba { color: rgba(255, 94, 93, 1); }
+.Coral-Teal-Gray-2-rgba { color: rgba(63, 124, 133, 1); }
+.Coral-Teal-Gray-3-rgba { color: rgba(0, 204, 191, 1); }
+.Coral-Teal-Gray-4-rgba { color: rgba(114, 242, 235, 1); }
+.Coral-Teal-Gray-5-rgba { color: rgba(116, 126, 126, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Coral-Teal-Gray-1-hsla { color: #ff5c5c; }
+.Coral-Teal-Gray-2-hsla { color: #3f7b83; }
+.Coral-Teal-Gray-3-hsla { color: #00ccbe; }
+.Coral-Teal-Gray-4-hsla { color: #6ef2e9; }
+.Coral-Teal-Gray-5-hsla { color: #737d7d; }
+
+
+
+html {
+    background: #72F2EB;
+    font-family: arial;
+}
+
+h2 {
+    font-family: courier;
+    color: #ff5c5c;
+}
+
+h3 {
+    font-family: courier;
+    color: #ff5c5c;
+    
+}
+a {
+    color: #3F7C85;
+}
+
+p {
+    font-family: arial;
+    color: #737d7d; }
+
+    div {
+        color: #00CCBF;
+    }
