@@ -1,43 +1,15 @@
-/* Color Theme Swatches in HSLA */
-.Coral-Teal-Gray-1-hsla { color: #ff5c5c; }
-.Coral-Teal-Gray-2-hsla { color: #3f7b83; }
-.Coral-Teal-Gray-3-hsla { color: #00ccbe; }
-.Coral-Teal-Gray-4-hsla { color: #6ef2e9; }
-.Coral-Teal-Gray-5-hsla { color: #737d7d; }
+/*Exercicio CSS zen garden*/
 
-/*Exercício de boxmodel*/
-.page-wrapper{
-    width: 80%;
-    max-width: 1280px;
-    margin: auto;}
+/*.Teals-1-hex { color: #0FC2C0; }
+.Teals-2-hex { color: #0CABA8; }*/
+.background { color: #008F8C; }
+.Principal  { color: #ffffff; }
+.Destaque   { color: #023535; }
 
-#zen-intro {height: 550px;}
+/*____________________Exercício estilização textual_____________________*/
 
-#desing-archives {display: none;}
-#zen-intro header {background-color: #737d7d;
-    color: #ff5c5c;}
-
-#zen-intro header h1, #zen-intro header h2 {display: inline-block;}
-
-#zen-intro header h1 {margin-left: 1em;
-    margin-right: 1em;}
-aside ul {list-style-type: none;}
-
-aside ul li {margin: 1em;
-        text-align: center;}
-
-.main footer{margin: 4%;}
-
-.main footer a {border: solid 2px #3f7b83;
-            padding: 0.5em;
-            display: inline-block;}   
-
-
-
-/*Exercício estilização textual*/
-
-html {background: #6ef2e9;
-    color: #3f7b83;
+html {background: #ffffff;
+    color: #008F8C;
     font-size: 18px;
     font-family: Helvetica, sans-serif;}
 
@@ -53,29 +25,58 @@ h3 {font-size: 1.2rem;}
 
 abbr {font-variant: small-caps;}
 
-    /*Exercício de posicionamento*/
+/*________________________Exercício de boxmodel____________________________*/
+
+.page-wrapper{width: 80%;
+    max-width: 1280px;
+    margin: auto;}
+
+#zen-intro {height: 550px;}
+
+#desing-archives {display: none;}
+#zen-intro header {background-color:  #008F8C;
+    color:#ffffff;}
+
+#zen-intro header h1, #zen-intro header h2 {display: inline-block;}
+
+#zen-intro header h1 {margin-left: 1em;
+    margin-right: 1em;}
+aside ul {list-style-type: none;}
+
+aside ul li {margin: 1em;
+        text-align: center;}
+
+.main footer{margin: 4%;}
+
+.main footer a {border: solid 2px #3f7b83;
+            padding: 0.5em;
+            display: inline-block;} 
+
+
+
+    /*_________________________________________________________________Exercício de posicionamento__________________________________________________________________________*/
 
 .page-wrapper {position: relative;}
 
 .explanation {width: 60%;
-border-right: #3f7b83 solid 1px;
+border-right:  #008F8C solid 1px;
 padding-right: 2%;}
 
-#design-selection {
-    left: 62%;
+.design-selection {
+    left: 53%;
     position: absolute;
-    top: 520px;
-    padding-left: 2%;
-    padding-right: 20%;}
+    top: 480px;
+    padding-left: 4%;
+    padding-right: 9%;}
 
-    /* Exercicio flexbox*/
+   /*____________________________________________________________________Exercicio flexbox___________________________________________________________________________________________*/
 
 .supporting footer {display: flex;
     justify-content: space-evenly;}
 
 .benefits {display: flex;
-border-top: #3f7b83 1px;
-border-bottom: #3f7b83 solid 1px;}
+border-top: #008F8C solid 1px;
+border-bottom: #008F8C solid 1px;}
 
 .benefits h3 {order: 2;
     align-self: center;
@@ -85,9 +86,54 @@ border-bottom: #3f7b83 solid 1px;}
 
 .participation  {display: flex;
    flex-wrap: wrap;
-   border-top: #3f7b83 1px;}
+   border-top: #008F8C solid 1px;}
 
 .participation h3, .participation p { flex-basis: 50%;}
 
 .participation h3 {
     align-self: center;}
+
+/*__________________________________________________________________Ecercício de pseudo classes____________________________________________________________________________*/
+
+a {color: #023535;}
+
+a:hover {color: #02353584;}
+
+.main p:first-of-type::first-letter {font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;}
+
+.design-selection li {border-top: #008F8C solid 1px;
+padding-top: 5px;}
+
+.design-selection li:last-of-type {border-bottom: #008F8C solid 1px;
+    padding-bottom: 5px;}
+
+/*__________________________________________________________________Ecercício de media query____________________________________________________________________________*/
+
+@media screen and (max-width) {
+    .design-selection {position: static;
+        width: 100%;}
+.explanation {border-right: none;
+    width: 100%;}
+
+#zen-intro {height: auto;}
+
+    .participation {flex-direction: column;}
+
+p {text-indent: 0;}
+}
+
+@media print {
+    html {font-family:'Times New Roman', Times, serif}
+
+    #zen-intro header {
+        background-color: #fbfcfd;
+        color: #008F8C;
+    }
+
+    .design-selection {position: static;
+        width: 100%;}
+.explanation {border-right: none;
+    width: 100%;}
+}
